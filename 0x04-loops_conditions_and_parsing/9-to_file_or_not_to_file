@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # A bash script that gives information about holbertonschool file
-if test -f "$holbertonschool"; then
+if [ -e "$holbertonschool" ]; then
 	echo "holbertonschool file exists"
 	if [ -s "$holbertonschool" ]; then
 		echo "holbertonschool file is not empty"
-		if [ -f "$holbertonschool" ]; then
-			echo "holbertonschool is a regular file"
-		fi
 	else
 		echo "holbertonschool file is empty"
+	fi
+	if [ -f "$holbertonschool" ]; then
+		echo "holbertonschool is a regular file"
 	fi
 else
 	echo "holbertonschool file does not exist"
