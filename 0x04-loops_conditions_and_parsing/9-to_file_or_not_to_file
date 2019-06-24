@@ -2,7 +2,7 @@
 # A bash script that gives information about holbertonschool file
 if test -f "$holbertonschool"; then
 	echo "holbertonschool file exists"
-	if ls "$holbertonschool"; then
+	if [ -s "$holbertonschool" ]; then
 		echo "holbertonschool file is not empty"
 		if [ -f "$holbertonschool" ]; then
 			echo "holbertonschool is a regular file"
