@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# A bash scripts that displays To infinity and beyond catch SIGTERM
+while ((1)); do
+	trap "echo I am invincible!!!" SIGTERM
+	echo 'To infinity and beyond'
+	sleep 2
+done
