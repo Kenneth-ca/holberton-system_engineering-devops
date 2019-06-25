@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+# Kill process using kill command
+var=$(pidof -s bash ./4-to_infinity_and_beyond)
+kill "$var"
