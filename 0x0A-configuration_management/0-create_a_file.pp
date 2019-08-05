@@ -1,3 +1,4 @@
+#It creates a file
 file{
         '/tmp/holberton':
         mode    => '0744',
