@@ -1,1 +1,5 @@
 #!/usr/bin/env bash
+#Configuration file for the local SSH client
+Host 35.196.4.24
+	IdentityFile ~/.ssh/holberton
+	PasswordAuthentication no
