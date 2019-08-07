@@ -11,6 +11,6 @@ file_line { 'no password':
 file_line { 'identify':
   ensure => present,
   path => '/etc/ssh/ssh_config',
-  line => 'IdentifyFile ~/.ssh/holberton',
-  match => '^IdentifyFile.*',
+  line => 'IdentityFile ~/.ssh/holberton',
+  match => '^IdentityFile.*',
 }
