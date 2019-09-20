@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """ A module that works with the Reddit API"""
 import requests
-import sys
 
 
 def top_ten(subreddit):
     """Returns the hot posts of a subreddit"""
     try:
-        url = 'https://www.reddit.com/r/' + sys.argv[1] + '/hot.json'
+        url = 'https://www.reddit.com/r/' + subreddit + '/hot.json'
         header = {'User-agent': 'Kenneth98765421'}
         limit = {'limit': '10'}
         resp = requests.get(url, headers=header,
