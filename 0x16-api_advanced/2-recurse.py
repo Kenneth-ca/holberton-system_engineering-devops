@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """ A module that works with the Reddit API"""
 import requests
-import sys
 
 
-def recurse(subreddit, hot_list=[], after='null'):
+def recurse(subreddit, hot_list=[], after="null"):
     """Returns recursively the hot posts of a subreddit"""
     try:
         url = 'https://www.reddit.com/r/' + subreddit + '/hot.json'
