@@ -5,6 +5,6 @@ exec { 'Debugging4':
 }
 
 exec { 'restart':
-  command  => 'sudo service nginx restart',
+  command  => 'service nginx restart',
   provider => shell,
 }
