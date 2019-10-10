@@ -4,7 +4,7 @@ exec { 'Debugging4':
   provider => shell,
 }
 
-exec { 'restart':
+-> exec { 'restart':
   command  => 'service nginx restart',
   provider => shell,
 }
