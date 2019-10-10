@@ -4,6 +4,8 @@ exec { 'Debugging4':
   command  => "echo 'ULIMIT=\"-n 4096\"' > /etc/default/nginx",
   provider => 'shell',
 }
+
 exec { 'restart':
-  command  => "sudo service nginx restart",
+  command  => 'sudo service nginx restart',
   provider => 'shell',
+}
